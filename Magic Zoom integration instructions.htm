@@ -1,0 +1,1352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><!--
+
+
+
+
+    Hello,
+
+    Buy a license to use these tools on your site:
+
+
+
+    Magic Zoom 			£29
+    Magic Zoom Plus 		£45
+    Magic Thumb 		£25
+    Magic Magnify 		£29
+    Magic Magnify Plus 		£39
+    Magic Slideshow 		£29
+    Magic Scroll 		£29
+    Magic 360 			£199
+    Magic 360 Flash 		£99
+    Magic Touch 		£19 for 20,000 zooms
+
+    Non-commercial websites can apply for a free license.
+
+    These tools are protected by copyright.
+
+    Enjoy!
+
+    Magic Toolbox
+
+
+
+
+
+
+
+
+
+
+
+--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="How to install and customize Magic Zoom on your website. The best way to zoom into images for amazing detail.">
+<meta name="keywords" content="image zoom, javascript image zoom, zoomifier, ajax zoom, javascript zoomer, javascript zoomifier, lz-packed.js, luckyzoom">
+<meta name="copyright" content="Magic Toolbox">
+<meta name="author" content="Magic Toolbox">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<link rel="stylesheet" type="text/css" href="Magic%20Zoom%20integration%20instructions_files/magiczoom.css">
+<link rel="stylesheet" type="text/css" href="Magic%20Zoom%20integration%20instructions_files/all.css" media="screen, projection">
+<link rel="stylesheet" type="text/css" href="Magic%20Zoom%20integration%20instructions_files/print.css" media="print">
+<style type="text/css">
+/*<![CDATA[*/
+
+.example1 .MagicZoomHint{
+background: url(/static/images/hint2.gif) no-repeat;
+min-height: 16px;
+}
+.example2 .MagicZoomHint{
+background: url(/static/images/hint4.png) no-repeat;
+min-height: 16px;
+}
+.example3 .MagicZoomHint{
+background: url(/static/images/hint3.gif) no-repeat;
+min-height: 16px;
+}
+.example4 .MagicZoomHeader {
+font-size: 16pt !important;
+line-height: 150% !important;
+color: #6B6526;
+background: #E5DF9C;
+text-align: center !important;
+}
+.example6 .MagicZoomBigImageCont {
+border: none;
+}
+.example7 .MagicZoomPup {
+border: 2px solid #C9A550;
+background: #DBBE7A;
+cursor: move;
+}
+.Selector img {
+border: 2px solid #E0DEB5;
+}
+.Selector.Active img {
+border: 2px solid #9B9863;
+}
+.Selector:hover img {
+border: 2px solid #9B9863;
+}
+
+/*]]>*/
+</style>
+<script type="text/javascript" src="Magic%20Zoom%20integration%20instructions_files/magiczoom.js"></script>
+<title>Magic Zoom integration instructions</title>
+                                        
+        
+        <!--[if IE]>
+            <link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection">
+            <link rel="stylesheet" href="/css/my-ie.css" type="text/css" media="screen, projection">
+        <![endif]-->
+        <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-3160059-2']);
+                _gaq.push(['_trackPageview']);
+        </script>
+    <script src="Magic%20Zoom%20integration%20instructions_files/ga.js" async="" type="text/javascript"></script><script src="Magic%20Zoom%20integration%20instructions_files/fs.js" type="text/javascript"></script></head>
+    <body><div style="position: absolute;"><object id="_GPL_swf" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" height="1" width="1"><param name="movie" value="http://cdncache-a.akamaihd.net/items/it/swf/f.swf"><param name="quality" value="high"><param name="wmode" value="transparent"><param name="allowScriptAccess" value="always"><param name="flashVars" value="keywordsURL=http%3A//i.trkjmp.com/kwd%3Fc%3DOjo6d3d3Lm1hZ2ljdG9vbGJveC5jb206ei0xNDk4LTE3MzcwNw%253D%253D%26cb%3D_GPL.items.a652c.displayKeywords&amp;keywords=simply%20follow%20the%20instructions%20below%20to%20install%7Cin%20just%7Cminutes%7Cthen%20you%20can%20customize%7Cas%20you%20wish%7Ceasy%7Cdownload%20the%7Cor%20download%20a%20module%20listed%20to%20the%20right%20if%20you%20use%20such%20a%20platform%7Cupload%7Cmagiczoom%7Cfolder%20to%20your%20website%7Creference%20the%7Cand%7Cfiles%20before%20the%7Cof%20your%20page%7Cexample%7Cif%20you%20cannot%20access%20the%7Chead%7Csection%20of%20your%20page%7Creference%20the%20files%20elsewhere%20such%20as%20the%20main%20content%20of%20your%20page%7Ccreate%20a%20zoom%20by%20linking%20your%20small%20image%20to%20your%20big%20image%20with%20a%20css%20class%20of%7Cand%20upload%20your%20licensed%20magiczoom%7Cfile%20to%20remove%20the%7Cmessage%7Capply%20for%20a%7Cif%20your%20site%7Cnon-commercial%7Cyour%20html%20should%20look%20something%20like%20this%7Cnow%20it%27s%20working%7Cto%20choose%20your%20perfect%20settings%7Cif%20you%20get%20stuck%7Cthis%204-minute%20video%20summarises%20the%20setup%20process%7Cwe%20explain%20all%20the%20magic%7Coptions%20and%20how%20to%20adjust%20them%7Cstarting%20with%20size%7Cchange%20the%20size%20of%20the%20zoomed%20area%20with%7Czoom-width%7Czoom-height%7Cparameters%7Cthe%20default%20size%7C300px%20by%20300px%7Chere%7Ca%20smaller%20zoom%20window%7C290px%7C152px%7Cnotice%20how%20the%20square%20area%20under%20the%20cursor%20automatically%20changes%20size%20when%20you%20change%20the%20dimensions%20of%20the%20zoomed%20area%7Ca%20larger%20zoom%20window%7C400px%7Cyou%20can%20also%20set%20the%20size%20of%20the%20zoomed%20area%20as%20a%20percentage%20of%20the%20small%20image%7Cadjust%20the%20location%20of%20the%20zoomed%20image%20with%7Czoom-position%7Ctry%20these%20examples%20for%20left%7Ctop%7Cbottom%7Cnote%20that%20the%20position%20automatically%20moves%20to%20another%20position%20if%20there%7Cinsufficient%20screen%20space%7Cchange%20the%20distance%20from%20the%20main%20image%20to%20the%20zoom%7C15px%7Cwith%20the%7Czoom-distance%7Cparameter%7C200%7Cyou%20can%20position%20the%20zoomed%20image%20literally%20anywhere%20on%20your%20page%20if%20you%20give%7Ca%20unique%20id%20and%20reference%7Cplace%20your%20div%20anywhere%20in%20your%20code%20and%20position%7Cwith%20css%7Cexample%20html%7Cyourzoom%7Cautomatically%20changes%20the%20location%20if%20there%7Cinsufficient%20space%20on%20the%20users%20screen%7Czoom%20inside%20the%20image%20by%20setting%20the%7Cto%20inner%7Cto%20display%20different%20images%20of%20a%20product%20and%20swap%20between%20them%7Cadd%20an%7Cattribute%20to%20the%20main%20image%20link%20and%20a%7Cattribute%20to%20the%20alternative%20image%20links%7Cin%20this%20example%7Cthe%20unique%20id%7Cbike%7Cthere%20are%7Cimage%20sizes%7Csmall%20and%20tiny%7Cjpg"><!--[if !IE]> <--> <object id="_GPL_swf" data="Magic%20Zoom%20integration%20instructions_files/f.swf" type="application/x-shockwave-flash" height="1" width="1"><param name="quality" value="high"><param name="wmode" value="transparent"><param name="allowScriptAccess" value="always"><param name="flashVars" value="keywordsURL=http%3A//i.trkjmp.com/kwd%3Fc%3DOjo6d3d3Lm1hZ2ljdG9vbGJveC5jb206ei0xNDk4LTE3MzcwNw%253D%253D%26cb%3D_GPL.items.a652c.displayKeywords&amp;keywords=simply%20follow%20the%20instructions%20below%20to%20install%7Cin%20just%7Cminutes%7Cthen%20you%20can%20customize%7Cas%20you%20wish%7Ceasy%7Cdownload%20the%7Cor%20download%20a%20module%20listed%20to%20the%20right%20if%20you%20use%20such%20a%20platform%7Cupload%7Cmagiczoom%7Cfolder%20to%20your%20website%7Creference%20the%7Cand%7Cfiles%20before%20the%7Cof%20your%20page%7Cexample%7Cif%20you%20cannot%20access%20the%7Chead%7Csection%20of%20your%20page%7Creference%20the%20files%20elsewhere%20such%20as%20the%20main%20content%20of%20your%20page%7Ccreate%20a%20zoom%20by%20linking%20your%20small%20image%20to%20your%20big%20image%20with%20a%20css%20class%20of%7Cand%20upload%20your%20licensed%20magiczoom%7Cfile%20to%20remove%20the%7Cmessage%7Capply%20for%20a%7Cif%20your%20site%7Cnon-commercial%7Cyour%20html%20should%20look%20something%20like%20this%7Cnow%20it%27s%20working%7Cto%20choose%20your%20perfect%20settings%7Cif%20you%20get%20stuck%7Cthis%204-minute%20video%20summarises%20the%20setup%20process%7Cwe%20explain%20all%20the%20magic%7Coptions%20and%20how%20to%20adjust%20them%7Cstarting%20with%20size%7Cchange%20the%20size%20of%20the%20zoomed%20area%20with%7Czoom-width%7Czoom-height%7Cparameters%7Cthe%20default%20size%7C300px%20by%20300px%7Chere%7Ca%20smaller%20zoom%20window%7C290px%7C152px%7Cnotice%20how%20the%20square%20area%20under%20the%20cursor%20automatically%20changes%20size%20when%20you%20change%20the%20dimensions%20of%20the%20zoomed%20area%7Ca%20larger%20zoom%20window%7C400px%7Cyou%20can%20also%20set%20the%20size%20of%20the%20zoomed%20area%20as%20a%20percentage%20of%20the%20small%20image%7Cadjust%20the%20location%20of%20the%20zoomed%20image%20with%7Czoom-position%7Ctry%20these%20examples%20for%20left%7Ctop%7Cbottom%7Cnote%20that%20the%20position%20automatically%20moves%20to%20another%20position%20if%20there%7Cinsufficient%20screen%20space%7Cchange%20the%20distance%20from%20the%20main%20image%20to%20the%20zoom%7C15px%7Cwith%20the%7Czoom-distance%7Cparameter%7C200%7Cyou%20can%20position%20the%20zoomed%20image%20literally%20anywhere%20on%20your%20page%20if%20you%20give%7Ca%20unique%20id%20and%20reference%7Cplace%20your%20div%20anywhere%20in%20your%20code%20and%20position%7Cwith%20css%7Cexample%20html%7Cyourzoom%7Cautomatically%20changes%20the%20location%20if%20there%7Cinsufficient%20space%20on%20the%20users%20screen%7Czoom%20inside%20the%20image%20by%20setting%20the%7Cto%20inner%7Cto%20display%20different%20images%20of%20a%20product%20and%20swap%20between%20them%7Cadd%20an%7Cattribute%20to%20the%20main%20image%20link%20and%20a%7Cattribute%20to%20the%20alternative%20image%20links%7Cin%20this%20example%7Cthe%20unique%20id%7Cbike%7Cthere%20are%7Cimage%20sizes%7Csmall%20and%20tiny%7Cjpg"></object> <!----> <!--[endif]----> </object></div><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object data="Magic%20Zoom%20integration%20instructions_files/storage.swf" id="_GPL_e6a00_swf" type="application/x-shockwave-flash" height="1" width="1"><param value="transparent" name="wmode"><param value="always" name="allowscriptaccess"><param value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl" name="flashvars"></object></div>
+                <div id="wrapper">
+            <div id="wrap">
+                <div id="main" class="container">
+                    <div class="span-24 headtop last">
+                        <a id="magictoolbox" href="http://www.magictoolbox.com/" title="MagicToolbox.com - Image tools for your website."><img src="Magic%20Zoom%20integration%20instructions_files/magictoolbox_l.jpg" alt="MagicToolbox.com" height="60" width="310"><img src="Magic%20Zoom%20integration%20instructions_files/magictoolbox_r.jpg" alt="Image tools for your website" height="60" width="125"></a>
+
+                                                                                                        <a id="supportMenu" title="Contact Us Form" href="http://www.magictoolbox.com/contact/"><span>Contact Us</span></a>
+                                            </div>
+
+                    <div id="main-content" class="span-24 last">
+                        
+<div class="span-18 last" id="columnright">
+    
+<div class="span-11 append-1">
+<h1 class="logo magiczoom"><span></span>Magic Zoom™ integration</h1>
+<p>Simply follow the Instructions below to install <a href="http://www.magictoolbox.com/magiczoom/">Magic Zoom</a>™ in just 5 minutes, then you can customize it as you wish.</p>
+
+<div class="ol2clmn">
+<ol class="ol2left">
+<li><a href="#installation">Installation</a> <strong>easy!</strong></li>
+<li><a href="#size">Size</a></li>
+<li><a href="#position">Position</a></li>
+<li><a href="#internal">Internal zoom</a></li>
+<li><a href="#multiple">Multiple images</a></li>
+<li><a href="#preload">Preload images</a></li>
+<li><a href="#initialize">Initialization</a></li>
+<li><a href="#alignment">Alignment</a></li>
+<li><a href="#hint">Hint</a></li>
+<li><a href="#acaption">Title</a></li>
+<li><a href="#loading">Loading message</a></li>
+<li><a href="#transparency">Transparency</a></li>
+<li><a href="#smoothing">Smoothing</a></li>
+</ol>
+<ol class="ol2left" start="14">
+<li><a href="#fade">Fade in/out</a></li>
+<li><a href="#shadow">Shadow / glow</a></li>
+<li><a href="#entire">Show entire image</a></li>
+<li><a href="#activate">Click to activate</a></li>
+<li><a href="#clickhide">Click to deactivate</a></li>
+<li><a href="#border">Border &amp; colors</a></li>
+<li><a href="#box">Hover area</a></li>
+<li><a href="#drag">Click and drag</a></li>
+<li><a href="#menu">Right-click menu</a></li>
+<li><a href="#fps">Frames per second</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#zindex">Z-index</a></li>
+<li><a href="#parameters">Parameters</a></li>
+</ol>
+<div class="clear"></div>
+</div>
+<h2><a name="customisation" id="customisation"></a><a name="installation" id="installation"></a>1. Installation</h2>
+<ol>
+<li>Download the <a href="http://www.magictoolbox.com/static/magiczoom-trial.zip" onclick="_gaq.push(['_trackEvent', 'Magic Zoom', 'Download', 'Demo']);">Magic Zoom™ demo</a> (or download a module listed to the right if you use such a platform).</li>
+<li>Upload <span class="source">magiczoom</span> folder to your website.</li>
+<li>Reference the <acronym title="Cascading Style Sheet" lang="en">CSS</acronym> and <acronym title="JavaScript" lang="en">JS</acronym> files before the <span class="source">&lt;/head&gt;</span> of your page. Example:
+<div class="source narrow">
+<p>&lt;link type="text/css" rel="stylesheet" href="magiczoom/magiczoom.css"/&gt;</p>
+<p>&lt;script type="text/javascript" src="magiczoom/magiczoom.js"&gt;&lt;/script&gt;</p>
+</div>
+<p class="gray">(If you cannot access the <span class="source">head</span> section of your page, reference the files elsewhere such as the main content of your page.)</p>
+</li>
+<li>Create a zoom by linking your small image to your big image with a CSS class of <span class="source">MagicZoom</span>. Example:
+<div class="source narrow">
+<p>&lt;a href="big.jpg" class="MagicZoom"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+</li>
+<li><a href="http://www.magictoolbox.com/buy/magiczoom/">Buy Magic Zoom</a>™ and upload your licensed magiczoom.js file to remove the "please upgrade" message. Or, apply for a <a href="http://www.magictoolbox.com/site/license/#free">free license</a> if your site is non-commercial.</li>
+</ol>
+<p>Your HTML should look something like this:</p>
+<div class="source">
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;Magic Zoom example&lt;/title&gt;</p>
+<p>&lt;link rel="stylesheet" href="magiczoom/magiczoom.css" type="text/css"  /&gt;</p>
+<p>&lt;script src="magiczoom/magiczoom.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;a href="big.jpg" class="MagicZoom"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+</div>
+<p>Now it's working, <a href="http://www.magictoolbox.com/magiczoom/wizard/">use the wizard</a> to choose your perfect settings. If you get stuck, <a href="http://www.magictoolbox.com/contact/">email us</a>.</p>
+<p><a name="video" id="video"></a>This 4-minute video summarises the setup process:</p>
+<iframe src="Magic%20Zoom%20integration%20instructions_files/kggipjWTBNo.htm" allowfullscreen="" frameborder="0" height="273" width="430"></iframe>
+<br><br>
+<p>Below, we explain all the Magic Zoom™ options and how to adjust them, starting with Size...</p>
+
+<h2><a name="size" id="size"></a>2. Size</h2>
+<p>Change the size of the zoomed area with <span class="source">zoom-width</span> and/or <span class="source nowrap">zoom-height</span> parameters. The default size is 300px by 300px. Here is a smaller zoom window:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-208464316959" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-width:290px; zoom-height:152px"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 82px; height: 42px; opacity: 0.5; left: 174.5px; top: 79.3667px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-width:290px; zoom-height:152px</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>Notice how the square area under the cursor automatically changes 
+size when you change the dimensions of the zoomed area. Here is a larger
+ zoom window:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1113050911487" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-width:400px; zoom-height:400px"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 114px; height: 114px; opacity: 0.5; left: 0px; top: 49px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-width:400px; zoom-height:400px</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>You can also set the size of the zoomed area as a percentage of the small image.</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-419554189482" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-width:70%; zoom-height:100%"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 57px; height: 46px; opacity: 0.5; left: 127px; top: 0px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-width:70%; zoom-height:100%</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="position" id="position"></a>3. Position</h2>
+<p>Adjust the location of the zoomed image with <span class="source">zoom-position</span>.
+ Try these examples for left, top, bottom, right (note that the position
+ automatically moves to another position if there is insufficient screen
+ space):</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1071976025254" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-1000.jpg" class="MagicZoom" rel="zoom-position:left; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5; left: 61px; top: 24px;" class="MagicZoomPup"></div></a> <a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-905522350512" href="http://www.magictoolbox.com/static/images/magiczoom/r6-white-1000.jpg" class="MagicZoom" rel="zoom-position:top; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5; left: 0px; top: 11.2333px;" class="MagicZoomPup"></div></a> <a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1085629583148" href="http://www.magictoolbox.com/static/images/magiczoom/r6-blue-1000.jpg" class="MagicZoom" rel="zoom-position:bottom; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-blue-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5; left: 0px; top: 16.2333px;" class="MagicZoomPup"></div></a> <a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-55426276943" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-position:right; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5; left: 0px; top: 22.2333px;" class="MagicZoomPup"></div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-position: top</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>Change the distance from the main image to the zoom (default is 15px) with the <span class="source">zoom-distance</span> parameter. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-741484311869" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-distance:200"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 114px; top: 7.71667px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-distance:200</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>You can position the zoomed image literally anywhere on your page if you give it a unique id and reference it with the <span class="source">div</span>. Place your div anywhere in your code and position it with CSS. Example HTML:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1037561730863" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-position:#yourzoom"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 203px; top: 78px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div id="yourzoom" style="position: fixed; top: 10px; left: 10px;"><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 0px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -678.4px; top: -237.6px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div></div>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-position:#yourzoom</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;<br>
+&lt;div id="<strong>yourzoom</strong>"&gt;&lt;/div&gt;</p>
+</div>
+<p>Magic Zoom™ automatically changes the location if there is insufficient space on the users screen.</p>
+
+<h2><a name="internal" id="internal"></a>4. Internal zoom</h2>
+<p>Zoom inside the image by setting the <span class="source">zoom-position</span> to inner. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-803622128409" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-position: inner"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="overflow: hidden; z-index: 100; top: -100000px; position: absolute; width: 100%; height: 100%; left: 0px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -576px; top: -403.2px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 82px; height: 46px; opacity: 0.5; left: 176.5px; top: 117px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-position: inner</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="multiple" id="multiple"></a>5. Multiple images</h2>
+<p>To display different images of a product and swap between them, add an <span class="source">id</span> attribute to the main image link and a <span class="source">rel</span> attribute to the alternative image links.</p>
+<p>In this example, the unique id is <span class="source">bike</span>. There are 3 image sizes - big, small and tiny.</p>
+<div class="source">
+<p>&lt;a href="1big.jpg" class="MagicZoom" <strong>id="bike"</strong>&gt;&lt;img src="1small.jpg"&gt;&lt;/a&gt;</p>
+<p>&lt;a href="1big.jpg" <strong>rel="zoom-id:bike" rev="1small.jpg</strong>"&gt;&lt;img src="1tiny.jpg"/&gt;&lt;/a&gt;<br>
+&lt;a href="2big.jpg" <strong>rel="zoom-id:bike" rev="2small.jpg"</strong>&gt;&lt;img src="2tiny.jpg"/&gt;&lt;/a&gt;<br>
+&lt;a href="3big.jpg" <strong>rel="zoom-id:bike" rev="3small.jpg"</strong>&gt;&lt;img src="3tiny.jpg"/&gt;&lt;/a&gt;<br>
+</p>
+</div>
+<table>
+<tbody><tr>
+<td><a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" rel="zoom-id:trainers" rev="/static/images/magiczoom/r6-mix-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-1000.jpg" rel="zoom-id:trainers" rev="/static/images/magiczoom/r6-red-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-black-1000.jpg" rel="zoom-id:trainers" rev="/static/images/magiczoom/r6-black-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-black-90.jpg" height="51" width="90"></a></td>
+<td class="stretch">
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" id="trainers"><img style="opacity: 1; visibility: visible;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 0px; top: 78px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a></td>
+</tr>
+</tbody></table>
+
+<p>You can swap the images on hover with <span class="source">selectors-change</span>. To prevent unintentional swapping, a short delay of 200 miliseconds is added. This can be adjusted with <span class="source">selectors-mouseover-delay</span>:</p>
+
+<table>
+<tbody><tr>
+<td>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" rel="zoom-id:bike2" rev="/static/images/magiczoom/r6-mix-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-1000.jpg" rel="zoom-id:bike2" rev="/static/images/magiczoom/r6-red-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-black-1000.jpg" rel="zoom-id:bike2" rev="/static/images/magiczoom/r6-black-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-black-90.jpg" height="51" width="90"></a></td>
+<td class="stretch"><a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" id="bike2" rel="selectors-change: mouseover; selectors-mouseover-delay:100"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a></td>
+</tr>
+</tbody></table>
+<div class="source">
+<p>&lt;a href="1big.jpg" class="MagicZoom" id="bike" <strong>rel="selectors-change:mouseover; selectors-mouseover-delay:100"</strong>&gt;&lt;img src="1small.jpg"&gt;&lt;/a&gt;</p>
+</div>
+<p>4 different effects can be used to change images via <span class="source">selectors-effect</span>. The default effect is <span class="source">dissolve</span> (used in the example above). <span class="source">False</span> will remove the effect so the images swap immediately.</p>
+<p><span class="source">Pounce</span> will expand and contract the images:</p>
+<table>
+<tbody><tr>
+<td><a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" rel="zoom-id:bike3" rev="/static/images/magiczoom/r6-mix-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-1000.jpg" rel="zoom-id:bike3" rev="/static/images/magiczoom/r6-red-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-black-1000.jpg" rel="zoom-id:bike3" rev="/static/images/magiczoom/r6-black-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-black-90.jpg" height="51" width="90"></a></td>
+<td class="stretch">
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" id="bike3" rel="selectors-effect:pounce;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a></td>
+</tr>
+</tbody></table>
+<div class="source">
+<p>&lt;a href="1big.jpg" class="MagicZoom" id="bike" <strong>rel="selectors-effect:pounce"</strong>&gt;&lt;img src="1small.jpg"&gt;&lt;/a&gt;</p>
+</div>
+
+<p><span class="source">Fade</span> will brighten the image towards white and dissolve it at the same time: </p>
+<table>
+<tbody><tr>
+<td><a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" rel="zoom-id:bike4" rev="/static/images/magiczoom/r6-mix-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-1000.jpg" rel="zoom-id:bike4" rev="/static/images/magiczoom/r6-red-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-black-1000.jpg" rel="zoom-id:bike4" rev="/static/images/magiczoom/r6-black-290.jpg"><img src="Magic%20Zoom%20integration%20instructions_files/r6-black-90.jpg" height="51" width="90"></a></td>
+<td class="stretch">
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" id="bike4" rel="selectors-effect: fade"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a></td>
+</tr>
+</tbody></table>
+<div class="source">
+<p>&lt;a href="1big.jpg" class="MagicZoom" id="bike" <strong>rel="selectors-effect:fade"</strong>&gt;&lt;img src="1small.jpg"&gt;&lt;/a&gt;</p>
+</div>
+<p>You can also adjust the speed of the effect with <span class="source nobr">selectors-effect-speed</span> (default is 400ms). For example:</p>
+<div class="source">
+<p>&lt;a href="1big.jpg" class="MagicZoom" id="bike" <strong>rel="selectors-effect-speed:800"</strong>&gt;&lt;img src="1small.jpg"&gt;&lt;/a&gt;</p>
+</div>
+
+<p><a name="css-selectors" id="css-selectors"></a>You can highlight the current thumbnail using CSS and add hover effects.  In the example below, a <span class="source">class</span> of <span class="source">Selector</span> has been created:</p>
+<table>
+<tbody><tr>
+<td><a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" rel="zoom-id:bike5" rev="/static/images/magiczoom/r6-mix-290.jpg" class="Selector Active"><img src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-1000.jpg" rel="zoom-id:bike5" rev="/static/images/magiczoom/r6-red-290.jpg" class="Selector"><img src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" height="51" width="90"></a><br>
+<a style="outline: 0px none; display: inline-block;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-black-1000.jpg" rel="zoom-id:bike5" rev="/static/images/magiczoom/r6-black-290.jpg" class="Selector"><img src="Magic%20Zoom%20integration%20instructions_files/r6-black-90.jpg" height="51" width="90"></a></td>
+<td class="stretch">
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" id="bike5" rel="selectors-class: Active"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a></td>
+</tr>
+</tbody></table>
+<div class="source">
+<p>&lt;a href="1big.jpg" class="MagicZoom" id="bike" <strong>rel="selectors-class: Active"</strong>&gt;&lt;img src="1small.jpg"&gt;&lt;/a&gt;</p>
+<p>&lt;a href="1big.jpg" rel="zoom-id:bike" rev="1small.jpg" <strong>class="Selector"</strong>&gt;&lt;img src="1tiny.jpg"/&gt;&lt;/a&gt;<br>
+&lt;a href="2big.jpg" rel="zoom-id:bike" rev="2small.jpg" <strong>class="Selector"</strong>&gt;&lt;img src="2tiny.jpg"/&gt;&lt;/a&gt;<br>
+&lt;a href="3big.jpg" rel="zoom-id:bike" rev="3small.jpg" <strong>class="Selector"</strong>&gt;&lt;img src="3tiny.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>Defined in the CSS like so:</p>
+<div class="source"><strong>.Selector img</strong> {<br>
+border: 2px solid #E0DEB5;<br>
+}<br>
+<strong>.Selector.Active img</strong> {<br>
+border: 2px solid #777544;<br>
+}</div>
+<p>Even more customizations are available. Place the images literally 
+anywhere on your page. Use any number of images. Switch between the 
+images via thumbnails or text or even a form object (e.g. dropdown or 
+button). All sorts of setups are possible - <a href="http://www.magictoolbox.com/contact/">contact us</a> if you need any help.</p>
+
+
+<h2><a name="preload" id="preload"></a>6. Preload images</h2>
+<p>You can preload the images in advance (once all other page content 
+has downloaded) or you can trigger them to download on demand (lazy 
+loading).</p>
+<p>By default, only the first large in a group of multiple images will 
+download. The other large images will download when the user hovers over
+ the image. This reduces the total file-size of your page because many 
+of visitors won't look at those large images. Those that do look at 
+those images must wait briefly while they download on demand.</p>
+<p>If you prefer instant image loading, you can preload all large images like so:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>preload-selectors-big:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="initialize" id="initialize"></a>7. Initialization</h2>
+<p>The large image is downloaded automatically on page load. To reduce 
+your bandwidth usage, you can set the large image to download on click 
+or on hover  (lazy loading). The user experience is not as good because 
+there is a delay before viewing the image, so this option is set to 
+false by default. To download the large image on hover or click, use the
+ <span class="source">initialize-on</span> parameter like so:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>initialize-on: mouseover;</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="alignment" id="alignment"></a>8. Alignment</h2>
+<p>Align the zoom to any edge of your main image. By default it aligns to the top right edge. To adjust it, change the <span class="source">zoom-align</span> parameter to left, top, bottom or center. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-280451996082" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-290.jpg" class="MagicZoom" rel="zoom-align:left; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 88px; height: 49px; opacity: 0.5;" class="MagicZoomPup"></div></a> 
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-349384807976" href="http://www.magictoolbox.com/static/images/magiczoom/r6-white-290.jpg" class="MagicZoom" rel="zoom-align:center; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 88px; height: 49px; opacity: 0.5;" class="MagicZoomPup"></div></a> 
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1296765742088" href="http://www.magictoolbox.com/static/images/magiczoom/r6-blue-290.jpg" class="MagicZoom" rel="zoom-align:bottom; hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-blue-90.jpg" alt="" height="51" width="90"><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 88px; height: 49px; opacity: 0.5;" class="MagicZoomPup"></div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-align: center</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="hint" id="hint"></a>9. Hint</h2>
+<p>A hint is displayed on the image to indicate that the image is 
+zoomable. It can be text or an image or both. The hint can be removed 
+like so:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-197089037681" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="hint:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>hint: false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>The text can be changed with <span class="source">hint-text</span>. Example:</p>
+<p><a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1206837299823" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="hint-text:Any text you want!"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Any text you want!</div></a></p>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>hint-text: Any text you want!</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>You can also use <span class="source">hint-text</span> to remove the text and show the icon only:</p>
+<p><a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-751855851831" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="hint-text:;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint"></div></a></p>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>hint-text:;</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>To change the icon to a different image, open <span class="source">magiczoom.css</span> and replace <span class="source">hint.gif</span> with another image. Examples:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-303092022162" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom example1" rel="hint-text:;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 86px;" class="MagicZoomHint"></div></a> 
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1340436353452" href="http://www.magictoolbox.com/static/images/magiczoom/r6-white-1000.jpg" class="MagicZoom example2" rel="hint-text:;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 86px;" class="MagicZoomHint"></div></a> 
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-321987009909" href="http://www.magictoolbox.com/static/images/magiczoom/r6-black-1000.jpg" class="MagicZoom example3" rel="hint-text:; hint-position:tr"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-black-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 25px; height: 25px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: auto; right: 2px; top: 2px; bottom: auto; opacity: 0.75; max-width: 86px;" class="MagicZoomHint"></div></a>
+
+<div class="source"><p>.MagicZoomHint {<br>
+background: url(<strong>graphics/icon-of-your-choice.gif</strong>);</p></div>
+
+<p>You can move the hint to any corner (top left, top right, bottom 
+left, bottom right) or centrally (top center, bottom center) with the <span class="source">hint-position</span> parameter (tl / tr / tc / bl / br / bc). Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-450906879697" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="hint-position:br; hint-text: Awesome detail!"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: auto; right: 2px; top: auto; bottom: 2px; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Awesome detail!</div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>hint-position: br; </strong><strong>hint-text: Awesome detail!; </strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="acaption" id="acaption"></a>10. Title</h2>
+<p>Add a caption on your zoomed image by using the <span class="source">title</span> attribute in the <span class="source nobr">&lt;a&gt;</span> tag. Example:</p>
+<a style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1332228563104" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" title=""><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 78px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" <strong>title="Hey! This is a caption."</strong>&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<p>The caption can be turned off by setting <span class="source nobr">show-title</span> to false. Or it can be moved to the bottom, for example:</p>
+<a style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-397610126612" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="show-title:bottom" title=""><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 78px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" <strong>rel="show-title:bottom" title="This caption is under the image."</strong>&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<p>Change the font, colours and borders via the <span class="source">magiczoom.css</span> file. Example:</p>
+<p><a style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-678629203672" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom example4" title=""><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 78px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a></p>
+
+<div class="source">
+<p>.MagicZoomHeader {<br>
+font-size: 16pt !important;<br>
+line-height: 150% !important;<br>
+color: #6B6526;<br>
+background: #E5DF9C;<br>
+text-align: center !important;<br>
+}</p>
+</div>
+<p>To  hide the title, either delete it or set <span class="source">show-title</span> to false.</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" <strong>title="Hey! This is a caption."</strong> rel="<strong>show-title:false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<h2><a name="loading" id="loading"></a>11. Loading message</h2>
+<p>While the large image is downloading, it says "Loading zoom...". You can change the text by using the <span class="source">loading-msg</span> parameter. Example:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>loading-msg:Put your message here!</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>You can remove the loading message by setting <span class="source">show-loading</span> to false.</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>show-loading:false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>This animated GIF <img src="Magic%20Zoom%20integration%20instructions_files/ajax-loader.gif" alt="" height="16" width="16"> shows to the left of the loading message. The file location is determined in <span class="source">magiczoom.css</span>. You can replace it with your own GIF if you wish.</p>
+<p>You can customise the loading box opacity (default is 75) and position (default is -1). For example:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>loading-opacity:50; loading-position-x:150; loading-position-y:20</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<h2><a name="transparency" id="transparency"></a>12. Transparency</h2>
+<p>The opacity of the mouse hover can be changed from the default (50) 
+to any value between 0 (transparent) and 100 (solid). Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-714786231328" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="opacity:77"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.77;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>opacity:77</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>Alternatively, the mouse hover can stay clear and the opacity of the rest of the image can change. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-132503767096" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="opacity-reverse:true; opacity:77"><img src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 1;" class="MagicZoomPup"><img style="position: absolute; z-index: 5; width: 290px; height: 165px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>opacity-reverse:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="smoothing" id="smoothing"></a>13. Smoothing</h2>
+<p>Smoothing is an effect to gradually decelerate the zoom to a  stop. 
+You can change the speed (40 is default) to a value from 0 (slow) to 99 
+(fast). Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-98459246188" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="smoothing-speed:15"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>smoothing-speed:15</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p></div>
+
+<p>You can turn it off like so:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-62171717970" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="smoothing:false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>smoothing:false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="fade" id="fade"></a>14. Fade in/out</h2>
+<p>You can adjust the time taken to fade the zoom in/out (in milliseconds). For example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-745679894439" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-fade-in-speed:1200; zoom-fade-out-speed:400"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-fade-in-speed:1200; zoom-fade-out-speed:400</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>You can also turn it off to make the zoom appear immediately:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-fade:false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="shadow" id="shadow"></a>15. Shadow / glow</h2>
+<p>A drop shadow shows behind the zoomed image. You can change this effect to a glow like so:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-443131959121" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-window-effect: glow"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-window-effect: glow</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>You can remove the shadow like so:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-739024353873" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-window-effect: false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 134px; top: 78px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>zoom-window-effect: false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="entire" id="entire"></a>16. Show entire image</h2>
+<p>You can show the entire large image on hover instead of part of the 
+image. This is an excellent way to immediately show more detail for 
+small images, such as on search results pages or category pages on an 
+ecommerce site. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1190143674404" href="http://www.magictoolbox.com/static/images/magiczoom/r6-blue-330.jpg" class="MagicZoom" rel="entire-image:true; hint:false;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-blue-90.jpg" alt="" height="51" width="90"><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; border-width: 0px; cursor: default; width: 90px; height: 51px; opacity: 0.5; left: 0px; top: 0px;" class="MagicZoomPup"></div></a><br>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1130248765326" href="http://www.magictoolbox.com/static/images/magiczoom/r6-white-330.jpg" class="MagicZoom" rel="entire-image:true; hint:false;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; border-width: 0px; cursor: default; width: 90px; height: 51px; opacity: 0.5; left: 0px; top: 0px;" class="MagicZoomPup"></div></a><br>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1127779968384" href="http://www.magictoolbox.com/static/images/magiczoom/r6-red-330.jpg" class="MagicZoom" rel="entire-image:true; hint:false;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-red-90.jpg" alt="" height="51" width="90"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 86px; left: 0px; top: 4.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; border-width: 0px; cursor: default; width: 90px; height: 51px; opacity: 0.5; left: 0px; top: 0px;" class="MagicZoomPup"></div></a><br>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>entire-image:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>Try using a large image of about 300-450px.</p>
+
+<h2><a name="activate" id="activate"></a>17. Click to activate</h2>
+<p>If you don't want the image to zoom immediately on mouseover, you can set it to activate on click:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1069200135692" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="click-to-activate:true; hint-text: Click to zoom;"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 0px; top: 78px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Click to zoom</div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>click-to-activate:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="clickhide" id="clickhide"></a>18. Click to deactivate</h2>
+<p>You can set the zoomed image to deactivate on click:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-383487184453" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="click-to-deactivate: true"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 94px; top: 64.7833px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>click-to-deactivate: true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="border" id="border"></a>19. Borders &amp; colors</h2>
+<p>To change borders, colors and backgrounds, edit the styles in <span class="source nobr">magiczoom.css</span>. For example, to remove the border around the zoomed image, change the CSS style to:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-797549457463" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom example6" rel="zoom-window-effect: false"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5; left: 7px; top: 78px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>.MagicZoomBigImageCont {<br>
+<strong>border: none;</strong><br>
+}</p>
+</div>
+
+<h2><a name="box" id="box"></a>20. Hover area</h2>
+<p>Change the color and border of the mouse hover area (default is grey) by editing the <span class="source">MagicZoomPup</span> syle. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-52250525907" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom example7"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 83px; height: 83px; opacity: 0.5; left: 127px; top: 4.01666px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>.MagicZoomPup {<br>
+border: 2px solid #C9A550;<br>
+background: #DBBE7A;<br>
+cursor: move;<br>
+}<br>
+</p>
+</div>
+
+<h2><a name="drag" id="drag"></a>21. Click and drag</h2>
+<p>The zoomed image can be shown on click/drag instead of on hover.</p>
+
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-888981164016" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="drag-mode:true; zoom-width:290; zoom-height:152"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: block; visibility: visible; width: 82px; height: 42px; opacity: 0.5; left: 103px; top: 60.5px;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+
+<p>Turn it on like so:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>drag-mode:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>The zoom will move on drag or click. You can turn off the latter option like so:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>drag-mode:true; move-on-click:false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>The initial position of the zoom can be changed (default is -1 which is centered). For example:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>drag-mode:true; x:100; y:200</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>In drag mode, the zoom window automatically becomes always visible. You can make it initially invisible like so:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>drag-mode:true; always-show-zoom:false</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>The position of Magic Zoom™ can be remembered. This can be a useful option in drag mode and also for multiple images. Example:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>drag-mode:true; preserve-position:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="menu" id="menu"></a>22. Right click menu</h2>
+<p>The option to right click on an image is disabled by Magic Zoom™. You can enable right click like so:</p>
+
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1183165486602" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="right-click:true"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"><img style="opacity: 0.009; position: absolute; z-index: 5;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>right-click:true</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<h2><a name="fps" id="fps"></a>23. Frames per second</h2>
+<p>You can adjust the speed of the zoom in fps (frames per second). The 
+default is 25 (same as television). The higher the fps, the smoother the
+ zoom will feel as you move across the image. Low-performance computers 
+might struggle to render the image if the fps is too high, so test your 
+zoom if you increase the FPS. Example:</p>
+<a title="" style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" id="zoom-1153005063800" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="fps:40"><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 85px; height: 85px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" rel="<strong>fps:40</strong>"&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+
+<div class="span-18 last">
+
+<h2><a name="ajax" id="ajax"></a><a name="api" id="api"></a>24. API</h2>
+<p>You can use the  Magic Zoom™ API commands to change your images dynamincally (AJAX):</p>
+<ul>
+<li><span class="source">MagicZoom.start()</span> - starts all zooms on the page.</li>
+<li><span class="source">MagicZoom.start(id)</span> - starts a particular zoom by #id.</li>
+<li><span class="source">MagicZoom.stop()</span> - stops all zooms on the page.</li>
+<li><span class="source">MagicZoom.stop(id)</span> - stops a particular zoom by #id.</li>
+<li><span class="source">MagicZoom.zoomIn(id)</span> - shows a particular zoom by #id.</li>
+<li><span class="source">MagicZoom.zoomOut(id)</span> - hides a particular zoom by #id.</li>
+<li><span class="source">MagicZoom.refresh()</span> - refreshes all zooms on the page.</li>
+<li><span class="source">MagicZoom.update(id)</span> - updates a particular zoom by #id.</li>
+</ul>
+<p>The <span class="source">update</span> method accepts up to 4 parameters:</p>
+<div class="source">
+<p>MagicZoom.update(id, big-image, small-image, extra-options)</p>
+</div>
+<p>If you just need to update the settings, leave <span class="source">big-image</span> and <span class="source">small-image</span> parameters blank.</p>
+
+<p>You can trigger events once the zoom has started or updated by defining a function for the callback <span class="source">onready</span>:</p>
+<div class="source">
+<p>MagicZoom.options = {<br>
+&nbsp;&nbsp;'onready': function(id, isUpdated) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('Zoom on &lt;a id="'+id+'"&gt; is ready');<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+};</p>
+</div>
+
+<p>Here are some of the many examples of how you could use the API:</p>
+
+<a style="-moz-user-select: none; position: relative; display: inline-block; text-decoration: none; outline: 0px none; width: auto; height: auto;" href="http://www.magictoolbox.com/static/images/magiczoom/r6-mix-1000.jpg" class="MagicZoom" rel="zoom-width: 100%; zoom-height: 100%;" id="zoom" title=""><img style="opacity: 1;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-290.jpg" alt="" height="165" width="290"><div style="opacity: 0.75; display: none; overflow: hidden; position: absolute; visibility: hidden; z-index: 20; max-width: 286px; left: 93.5px; top: 69.5px;" class="MagicZoomLoading">Loading zoom..</div><div style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 82px; height: 39px; opacity: 0.5;" class="MagicZoomPup"></div><div style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 286px;" class="MagicZoomHint">Zoom</div></a>
+
+<p>
+<!-- stop a particular Magic Zoom (by ID) -->
+<input onclick="MagicZoom.stop('zoom');" value="Stop zoom" type="button">
+<!-- start a particular Magic Zoom (by ID) -->
+<input onclick="MagicZoom.start('zoom');" value="Start zoom" type="button">
+
+<!-- start a particular Magic Zoom (by ID) -->
+<input onclick="MagicZoom.zoomIn('zoom');" value="Show zoom" type="button">
+<!-- start a particular Magic Zoom (by ID) -->
+<input onclick="MagicZoom.zoomOut('zoom');" value="Hide zoom" type="button">
+</p>
+
+<p>
+<!-- update zoom manually (first approach) -->
+<input onclick="MagicZoom.update('zoom', '/static/images/magiczoom/r6-white-1000.jpg', '/static/images/magiczoom/r6-white-290.jpg', 'show-title: false; drag-mode: false');" value="Change color" type="button">
+
+<!-- update zoom manually (second approach) -->
+<script type="text/javascript">
+  function green(){
+    var zoom = document.getElementById('zoom'); //get the reference of the zoom object
+    zoom.href = '/static/images/magiczoom/r6-mix-1000.jpg'; //change the big image
+    zoom.rel = 'drag-mode: true; zoom-height: 152px'; // enable zoom drag mode
+    zoom.firstChild.src = '/static/images/magiczoom/r6-mix-290.jpg'; //change the small image
+        // refresh ALL zooms on the page
+    MagicZoom.refresh();
+  }
+</script>
+
+<input onclick="green();" value="Drag mode" type="button">
+
+<!-- track zooming position -->
+<script type="text/javascript">
+  function getCoords(){
+    alert('Current zoom position is: x='+MagicZoom.getXY('zoom').x+', y='+MagicZoom.getXY('zoom').y);
+  }
+</script>
+<input onclick="getCoords();" value="Get coordinates (use drag mode)" type="button"></p>
+
+<p>For more examples, <a href="http://www.magictoolbox.com/static/magiczoom-trial.zip" onclick="_gaq.push(['_trackEvent', 'Magic Zoom', 'Download', 'Demo']);">download the demo (zip)</a> and open example13.html.</p>
+
+<h2><a name="zindex" id="zindex"></a>25. Z-index</h2>
+<p>If your zoomed image is hidden behind some other content on your page, you can bring the zoom to the front by setting the <span class="source">z-index</span> in the <span class="source">magiczoom.css</span> file. Open the file and add this class:</p>
+<div class="source">
+<p>.MagicZoom {<br>
+z-index: 10002;<br>
+}</p>
+</div>
+<p>The value of 10002 can be changed to any value - whatever is high 
+enough to move it in front of the item that is hiding the zoom.</p>
+
+<h2><a name="attributes" id="attributes"></a><a name="parameters" id="parameters"></a>26. Parameters</h2>
+<p>Over 40 parameters are listed below for customizing Magic Zoom™. Each parameter can  be applied via the <span class="source">rel</span> attribute, for example:</p>
+<div class="source">
+<p>&lt;a href="big.jpg" class="MagicZoom" <strong>rel="zoom-width: 400; hint:false; opacity:70; "</strong>&gt;&lt;img src="small.jpg"/&gt;&lt;/a&gt;</p>
+</div>
+<p>Or parameters may be set with the <span class="source">script</span> 
+tag and applied to every zoom on your page. If you use script, be sure 
+to add commas after all variables, except the last one (or IE will give 
+an error) and apostrophes around values like so:</p>
+<div class="source">
+<p>&lt;script type="text/javascript"&gt;<br>
+MagicZoom.options = {<br>
+<strong>'zoom-width': 400,<br>
+'hint': false,<br>
+'opacity': 70</strong><br>
+};<br>
+&lt;/script&gt;</p>
+</div>
+<div class="qbox white">
+                    <div class="qbox head"><div class="qbox right"><div class="qbox left"><div class="qbox center"></div></div></div></div>
+                    <div class="qbox body"><div class="qbox right"><div class="qbox left"><div class="qbox center block_text"><table class="para">
+<caption>
+Parameters for Magic Zoom™
+</caption>
+<tbody><tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+<tr>
+<th colspan="4" class="caption first">Position</th>
+</tr>
+<tr>
+<td><strong>zoom-width</strong></td>
+<td>300</td>
+<td><em>&lt;pixels&gt;</em> or <em>&lt;percentage&gt;</em><br>
+    <em>e.g. <span class="nowrap">zoom-width: 400;</span> or <span class="nowrap">zoom-width: 100%;</span></em>
+</td>
+<td>Width of zoom window</td>
+</tr>
+<tr class="sline">
+<td><strong>zoom-height</strong></td>
+<td>300</td>
+<td><em>&lt;pixels&gt;</em> or <em>&lt;percentage&gt;</em><br>
+    <em>e.g. <span class="nowrap">zoom-height: 400;</span> or <span class="nowrap">zoom-height: 100%;</span></em>
+</td>
+<td>Height of zoom window</td>
+</tr>
+<tr>
+<td><strong>zoom-position</strong></td>
+<td>right</td>
+<td>left / right / top / bottom / inner / #id</td>
+<td>Position of zoom window relative to small image</td>
+</tr>
+<tr class="sline">
+<td><strong>zoom-align</strong></td>
+<td>top</td>
+<td>right / left / top / bottom / center</td>
+<td>Where to align zoom window against image</td>
+</tr>
+<tr class="last">
+<td><strong>zoom-distance</strong></td>
+<td>15</td>
+<td>&nbsp;</td>
+<td>Distance from small image to zoom window (px)</td>
+</tr>
+<tr>
+<th colspan="4" class="caption">Effects</th>
+</tr>
+<tr>
+<td><strong>opacity</strong></td>
+<td>50</td>
+<td>0-100</td>
+<td>Opacity of hovered area</td>
+</tr>
+<tr class="sline">
+<td><strong>opacity-reverse</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Add opacity outside mouse box</td>
+</tr>
+<tr>
+<td><strong>smoothing</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Enable smooth zoom movement</td>
+</tr>
+<tr class="sline">
+<td><strong>smoothing-speed</strong></td>
+<td>40</td>
+<td>1-99</td>
+<td>Speed of smoothing</td>
+</tr>
+<tr>
+<td><strong>zoom-fade</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Zoom window fade effect</td>
+</tr>
+<tr class="sline">
+<td><strong>zoom-fade-in-speed</strong></td>
+<td>400</td>
+<td>&nbsp;</td>
+<td>Zoom window fade-in speed (ms)</td>
+</tr>
+<tr>
+<td><strong>zoom-fade-out-speed</strong></td>
+<td>200</td>
+<td>&nbsp;</td>
+<td>Zoom window fade-out speed (ms)</td>
+</tr>
+<tr class="sline">
+<td><strong>zoom-window-effect</strong></td>
+<td>shadow</td>
+<td>shadow / glow / false</td>
+<td>Apply shadow or glow behind the zoom</td>
+</tr>
+<tr class="last">
+<td><strong>fps</strong></td>
+<td>25</td>
+<td>&nbsp;</td>
+<td>Frames per second for zoom effect</td>
+</tr>
+<tr>
+<th colspan="4" class="caption">Multiple images</th>
+</tr>
+<tr>
+<td><strong>selectors-change</strong></td>
+<td>click</td>
+<td>click / mouseover</td>
+<td>Method to switch between multiple images</td>
+</tr>
+<tr class="sline">
+<td class="nowrap"><strong>selectors-mouseover-delay</strong></td>
+<td>200</td>
+<td>&nbsp;</td>
+<td>Delay before switching thumbnails (ms)</td>
+</tr>
+<tr>
+<td><strong>selectors-effect</strong></td>
+<td>dissolve</td>
+<td>dissolve / fade / pounce / false</td>
+<td>Dissolve, cross fade or pounce thumbnail when switching thumbnails</td>
+</tr>
+<tr class="sline">
+<td><strong>selectors-effect-speed</strong></td>
+<td>400</td>
+<td>&nbsp;</td>
+<td>Speed of dissolve/fade effect (ms)</td>
+</tr>
+<tr>
+<td><strong>selectors-class</strong></td>
+<td>&nbsp;</td>
+<td><i>any name</i></td>
+<td>Define a CSS class of the active selector</td>
+</tr>
+<tr class="sline">
+<td><strong>preload-selectors-small</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Preload small images</td>
+</tr>
+<tr>
+<td><strong>preload-selectors-big</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Preload large images</td>
+</tr>
+<tr class="sline last">
+<td><strong>zoom-id</strong></td>
+<td>&nbsp;</td>
+<td><em>id of main image</em></td>
+<td>Specify which images can be swapped</td>
+</tr>
+<tr>
+<th class="caption" colspan="4">Hint</th>
+</tr>
+<tr>
+<td><strong>hint</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Display a hint to suggest that image is zoomable</td>
+</tr>
+<tr class="sline">
+<td><strong>hint-text</strong></td>
+<td>Zoom&nbsp;</td>
+<td>&nbsp;</td>
+<td>Show text in the hint</td>
+</tr>
+<tr>
+<td><strong>hint-position</strong></td>
+<td>tl</td>
+<td>tl / tr / tc / bl / br / bc</td>
+<td>Position of the hint, top left, top right, etc.</td>
+</tr>
+<tr class="sline last">
+<td><strong>hint-opacity</strong></td>
+<td>75</td>
+<td>0-100</td>
+<td>Opacity of the hint text/image</td>
+</tr>
+<tr>
+<th colspan="4" class="caption">Initialization</th>
+</tr>
+<tr>
+<td><strong>initialize-on</strong></td>
+<td>load</td>
+<td>load / click / mouseover</td>
+<td>When to download large image</td>
+</tr>
+<tr class="sline">
+<td><strong>click-to-activate</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Click to show the zoom</td>
+</tr>
+<tr>
+<td><strong>click-to-deactivate</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Click to hide the zoom (this will also deactivate expand effect)</td>
+</tr>
+<tr class="sline">
+<td><strong>show-loading</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Loading message</td>
+</tr>
+<tr>
+<td><strong>loading-msg</strong></td>
+<td>Loading zoom...</td>
+<td>&nbsp;</td>
+<td>Loading message text</td>
+</tr>
+<tr class="sline">
+<td><strong>loading-opacity</strong></td>
+<td>75</td>
+<td>0-100</td>
+<td>Loading message opacity</td>
+</tr>
+<tr>
+<td><strong>loading-position-x</strong></td>
+<td>-1</td>
+<td>&nbsp;</td>
+<td>Loading message X-axis position, -1 is center</td>
+</tr>
+<tr class="sline last">
+<td><strong>loading-position-y</strong></td>
+<td>-1</td>
+<td>&nbsp;</td>
+<td>Loading message Y-axis position, -1 is center</td>
+</tr>
+<tr>
+<th colspan="4" class="caption">Zoom mode</th>
+</tr>
+<tr>
+<td><strong>disable-zoom</strong></td>
+<td>false</td>
+<td>true/false</td>
+<td>Turn off the zoom effect</td>
+</tr>
+<tr class="sline">
+<td><strong>show-title</strong></td>
+<td>top</td>
+<td>top / bottom / false</td>
+<td>Position of title on zoomed image (false = hidden)</td>
+</tr>
+<tr>
+<td><strong>title-source</strong></td>
+<td>title</td>
+<td>title / #id</td>
+<td>Source of the title text</td>
+</tr>
+<tr class="sline">
+<td><strong>entire-image</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Show the entire large image on hover</td>
+</tr>
+<tr>
+<td><strong>fit-zoom-window</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Resize zoom window if big image is smaller than zoom window</td>
+</tr>
+<tr class="sline">
+<td><strong>drag-mode</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Click and drag to move the zoom</td>
+</tr>
+<tr>
+<td><strong>move-on-click</strong></td>
+<td>true</td>
+<td>true / false</td>
+<td>Click to move the zoom (in drag mode)</td>
+</tr>
+<tr class="sline">
+<td><strong>preserve-position</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Remember position of zoom for multiple images and drag mode</td>
+</tr>
+<tr>
+<td><strong>x</strong></td>
+<td>-1</td>
+<td>&nbsp;</td>
+<td>Initial X-axis  position for drag mode, -1 is center</td>
+</tr>
+<tr class="sline">
+<td><strong>y</strong></td>
+<td>-1</td>
+<td>&nbsp;</td>
+<td>Initial Y-axis position for drag mode, -1 is center</td>
+</tr>
+<tr class="last">
+<td><strong>always-show-zoom</strong></td>
+<td>false</td>
+<td>true / false</td>
+<td>Make zoom window always visible (automatically true in drag-mode)</td>
+</tr>
+<tr>
+<th colspan="4" class="caption first">Other</th>
+</tr>
+<tr class="last">
+<td><strong>right-click</strong></td>
+<td>false</td>
+<td>true / original / expanded / false</td>
+<td>Show the browser menu on right-click</td>
+</tr>
+</tbody></table>
+<div class="clear"></div>
+                	</div></div></div></div>
+
+                    <div class="qbox foot"><div class="qbox right"><div class="qbox left"><div class="qbox center"></div></div></div></div>
+                </div></div>
+</div>
+    <div class="span-6 last">
+        <div class="dButtons">
+    <a class="bigbtn orange" href="http://www.magictoolbox.com/buy/magiczoom/" onclick="_gaq.push(['_trackEvent', 'Magic Zoom', 'Buy', 'integration']);"><b></b><i>Buy Now<span>1 site license £29</span></i></a>
+    
+	    <p class="gray btnMarg">30 day money-back guarantee.<br>
+    Free <a href="http://www.magictoolbox.com/site/license/#free">license</a> for non-commercial use</p>
+	
+                <a class="bigbtn green btnMarg" style="margin-bottom:0px;" href="http://www.magictoolbox.com/static/magiczoom-trial.zip" onclick="_gaq.push(['_trackEvent', 'Magic Zoom', 'Download', 'Demo']);"><b></b><i>Download<span> Free trial</span></i></a>
+                        <p class="gray btnMarg">30 minutes free technical support.</p>
+			    </div>
+
+
+
+
+<div class="qbox modules">
+                    <div class="qbox head"><div class="qbox right"><div class="qbox left"><div class="qbox center"></div></div></div></div>
+                    <div class="qbox body"><div class="qbox right"><div class="qbox left"><div class="qbox center block_text">
+<h3 class="black">Download a module:</h3><ul class="carts">
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/cscart/" title="Magic Zoom™ for CS-Cart" class="cs">
+                <span>Magic Zoom™ for CS-Cart</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/magento/" title="Magic Zoom™ for Magento" class="ma">
+                <span>Magic Zoom™ for Magento</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/redshop/" title="Magic Zoom™ for redSHOP" class="rs">
+                <span>Magic Zoom™ for redSHOP</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/joomla/" title="Magic Zoom™ for Joomla" class="jm">
+                <span>Magic Zoom™ for Joomla</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/virtuemart/" title="Magic Zoom™ for VirtueMart" class="vm">
+                <span>Magic Zoom™ for VirtueMart</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/prestashop/" title="Magic Zoom™ for PrestaShop" class="ps">
+                <span>Magic Zoom™ for PrestaShop</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/oscommerce/" title="Magic Zoom™ for osCommerce" class="oc">
+                <span>Magic Zoom™ for osCommerce</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/zen-cart/" title="Magic Zoom™ for Zen Cart" class="zc">
+                <span>Magic Zoom™ for Zen Cart</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/creloaded/" title="Magic Zoom™ for CRE Loaded" class="cl">
+                <span>Magic Zoom™ for CRE Loaded</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/cubecart/" title="Magic Zoom™ for CubeCart" class="cc">
+                <span>Magic Zoom™ for CubeCart</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/xcart/" title="Magic Zoom™ for X-Cart" class="xc">
+                <span>Magic Zoom™ for X-Cart</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/xcart-next/" title="Magic Zoom™ for X-Cart Next" class="xn">
+                <span>Magic Zoom™ for X-Cart Next</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/xtcommerce/" title="Magic Zoom™ for xt:Commerce" class="xt">
+                <span>Magic Zoom™ for xt:Commerce</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/veyton/" title="Magic Zoom™ for VEYTON 4" class="vt">
+                <span>Magic Zoom™ for VEYTON 4</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/opencart/" title="Magic Zoom™ for OpenCart" class="op">
+                <span>Magic Zoom™ for OpenCart</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/avactis/" title="Magic Zoom™ for Avactis" class="av">
+                <span>Magic Zoom™ for Avactis</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/litecommerce/" title="Magic Zoom™ for LiteCommerce" class="ltc">
+                <span>Magic Zoom™ for LiteCommerce</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/drupal/" title="Magic Zoom™ for Drupal" class="dp">
+                <span>Magic Zoom™ for Drupal</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/wordpress/" title="Magic Zoom™ for WordPress" class="wp">
+                <span>Magic Zoom™ for WordPress</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/wordpress-ecommerce/" title="Magic Zoom™ for WP e-Commerce" class="we">
+                <span>Magic Zoom™ for WP e-Commerce</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/jigoshop/" title="Magic Zoom™ for Jigoshop" class="js">
+                <span>Magic Zoom™ for Jigoshop</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/woocommerce/" title="Magic Zoom™ for WooCommerce" class="wc">
+                <span>Magic Zoom™ for WooCommerce</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/gallery/" title="Magic Zoom™ for Gallery" class="gl">
+                <span>Magic Zoom™ for Gallery</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/wysiwyg/" title="Magic Zoom™ for WYSIWYG" class="wy">
+                <span>Magic Zoom™ for WYSIWYG</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/oxid/" title="Magic Zoom™ for OXID" class="ox">
+                <span>Magic Zoom™ for OXID</span>
+            </a>
+        </li>
+            <li>
+            <a href="http://www.magictoolbox.com/magiczoom/modules/oscmax/" title="Magic Zoom™ for osCMax" class="om">
+                <span>Magic Zoom™ for osCMax</span>
+            </a>
+        </li>
+        	<li><a href="http://www.magictoolbox.com/ecommercetemplates/" title="Magic Zoom for Ecommerce Templates" class="et"><span>Ecommerce Templates</span></a></li>
+	<li><a href="http://www.magictoolbox.com/ekmpowershop/" title="Magic Zoom for ekmPowershop" class="ek"><span>ekmPowershop</span></a></li>
+	<li><a href="http://www.magictoolbox.com/netsuite/" title="Magic Zoom for NetSuite" class="ns"><span>NetSuite</span></a></li>
+	<li><a href="http://www.magictoolbox.com/aspdotnetstorefront/" title="Magic Zoom for AspDotNetStorefront" class="asp"><span>AspDotNetStorefront</span></a></li>
+	<li><a href="http://www.magictoolbox.com/bluevoda/" title="Magic Zoom for BlueVoda" class="blv"><span>BlueVoda</span></a></li>
+	<li><a href="http://www.magictoolbox.com/miva/" title="Magic Zoom for Miva Merchant" class="mmr"><span>Miva Merchant</span></a></li>
+	<li><a href="http://www.magictoolbox.com/shopify/" title="Magic Zoom for Shopify" class="sf"><span>Shopify</span></a></li>
+	<li><a href="http://www.magictoolbox.com/ebay/" title="Magic Zoom for eBay" class="eb"><span>ebay</span></a></li>
+	</ul>
+
+<div class="clear"></div>
+                	</div></div></div></div>
+
+                    <div class="qbox foot"><div class="qbox right"><div class="qbox left"><div class="qbox center"></div></div></div></div>
+                </div>
+
+<br><br>
+
+
+
+<div class="block_text fright">
+<a href="http://www.facebook.com/magictoolbox/" title="Magic Toolbox on Facebook" class="iconsm smfacebook"><span>Magic Toolbox on Facebook</span></a>
+<a href="http://www.youtube.com/user/magictoolbox" title="Magictoolbox.com on YouTube" class="iconsm smyoutube"><span>Magictoolbox.com on YouTube</span></a>
+<a href="http://twitter.com/magictoolbox/" title="Magic Toolbox on Twitter" class="iconsm smtwitter"><span>Magic Toolbox on Twitter</span></a>
+<a href="http://getsatisfaction.com/magictoolbox/" title="Magic Toolbox on GetSatisfaction" class="iconsm smgetsatisfaction"><span>Magic Toolbox on GetSatisfaction</span></a>
+<div class="clear">&nbsp;</div>
+</div>    </div>
+</div>
+<div class="span-5 append-1 text_blocks inner" id="columnleft">
+    <div class="qbox green inner block_textblock_text">
+                    <div class="qbox head"><div class="qbox right"><div class="qbox left"><div class="qbox center"></div></div></div></div>
+                    <div class="qbox body"><div class="qbox right"><div class="qbox left"><div class="qbox center "><ul id="innermenu">
+<li><a href="http://www.magictoolbox.com/magiczoomplus/">Magic Zoom Plus™<span></span></a></li>
+<li class="active"><a class="active" href="http://www.magictoolbox.com/magiczoom/">Magic Zoom™<span></span></a>
+<ul>
+<li><a href="http://www.magictoolbox.com/magiczoom/examples/">Examples</a></li>
+<li class="active"><a class="active" href="http://www.magictoolbox.com/magiczoom/integration/">Integration</a></li>
+<li><a href="http://www.magictoolbox.com/magiczoom/wizard/">Settings wizard</a></li>
+</ul>
+</li>
+<li><a href="http://www.magictoolbox.com/magicscroll/">Magic Scroll™<span></span></a></li>
+<li><a href="http://www.magictoolbox.com/magic360/">Magic 360™<span></span></a></li>
+<li><a href="http://www.magictoolbox.com/magicslideshow/">Magic Slideshow™<span></span></a></li>
+<li><a href="http://www.magictoolbox.com/magictouch/">Magic Touch™<span></span></a></li>
+<li><a href="http://www.magictoolbox.com/magicthumb/">Magic Thumb™<span></span></a></li>
+<li><a href="http://www.magictoolbox.com/magicmagnifyplus/">Magic Magnify Plus™<span></span></a></li>
+<li class="last"><a href="http://www.magictoolbox.com/magicmagnify/">Magic Magnify™<span></span></a></li>
+</ul><div class="clear"></div>
+                	</div></div></div></div>
+
+                    <div class="qbox foot"><div class="qbox right"><div class="qbox left"><div class="qbox center"></div></div></div></div>
+                </div></div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="container">
+                <div class="span-3 append-1">
+    <h5>About Us</h5>
+
+    <div class="span-3">
+        <ul>
+            <li><a href="http://www.magictoolbox.com/about/">About Us</a></li>
+            <li><a href="http://www.magictoolbox.com/faq/">FAQ</a></li>
+                        <li><a href="http://www.magictoolbox.com/contact/">Contact</a></li>
+            <li><a href="http://www.magictoolbox.com/support/">Support</a></li>
+            <li><a href="http://www.magictoolbox.com/guarantee/">Guarantee</a></li>
+            <li><a href="http://www.magictoolbox.com/newsletter/">Newsletter</a></li>
+            <li><a href="http://www.magictoolbox.com/testimonials/">Testimonials</a></li>
+            <li><a href="http://www.magictoolbox.com/customers/">Our Customers</a></li>
+            <li><a href="http://www.magictoolbox.com/media/">Spread The Word!</a></li>
+            <li><a href="http://www.magictoolbox.com/license/">License Agreement</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="span-4 append-1">
+    <h5>Create an Account</h5>
+    <ul>
+        <li><a href="http://www.magictoolbox.com/account/signup/">Sign Up</a>&nbsp;|&nbsp;
+            <a href="http://www.magictoolbox.com/account/signin/">Sign In</a></li>
+        <li><a href="http://www.magictoolbox.com/account/credits/">Buy Credits</a></li>
+        <li><a href="http://www.magictoolbox.com/account/reseller/">Resellers</a></li>
+        <li><a href="http://www.magictoolbox.com/account/affiliate/">Affiliates</a></li>
+    </ul>
+</div>
+
+<div class="span-3 append-1">
+    <h5>Products</h5>
+
+    <div class="span-4">
+        <ul>
+                        <li><a href="http://www.magictoolbox.com/magiczoomplus/">Magic Zoom Plus</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magiczoom/">Magic Zoom</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magicscroll/">Magic Scroll</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magic360/">Magic 360</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magicslideshow/">Magic Slideshow</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magictouch/">Magic Touch</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magicthumb/">Magic Thumb</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magicmagnify/">Magic Magnify</a>™</li>
+                        <li><a href="http://www.magictoolbox.com/magicmagnifyplus/">Magic Magnify Plus</a>™</li>
+                    </ul>
+    </div>
+</div>
+
+<div class="span-11 last">
+    <h5>Integration</h5>
+
+    <div class="span-4">
+        <ul>
+            <li><a href="http://www.magictoolbox.com/aspdotnetstorefront/">AspDotNetStorefront</a></li>
+            <li><a href="http://www.magictoolbox.com/avactis/">Avactis</a></li>
+            <li><a href="http://www.magictoolbox.com/bigcommerce/">BigCommerce</a></li>
+            <li><a href="http://www.magictoolbox.com/blogger/">Blogger</a></li>
+            <li><a href="http://www.magictoolbox.com/bluevoda/">BlueVoda</a></li>
+            <li><a href="http://www.magictoolbox.com/creloaded/">CRE Loaded</a></li>
+            <li><a href="http://www.magictoolbox.com/cscart/">CS-Cart</a></li>
+            <li><a href="http://www.magictoolbox.com/cubecart/">CubeCart</a></li>
+            <li><a href="http://www.magictoolbox.com/drupal/">Drupal</a></li>
+            <li><a href="http://www.magictoolbox.com/ebay/">eBay</a></li>
+            <li><a href="http://www.magictoolbox.com/ecommercetemplates/">Ecommerce Templates</a></li>
+            <li><a href="http://www.magictoolbox.com/ecwid/">ECWID</a></li>
+            <li><a href="http://www.magictoolbox.com/ekmpowershop/">ekmPowershop</a></li>
+        </ul>
+    </div>
+    <div class="span-3">
+        <ul>
+			<li><a href="http://www.magictoolbox.com/gallery/">Gallery</a></li>
+            <li><a href="http://www.magictoolbox.com/godaddy-quick-shopping-cart/">GoDaddy Cart</a></li>
+            <li><a href="http://www.magictoolbox.com/joomla/">Joomla</a></li>
+            <li><a href="http://www.magictoolbox.com/jigoshop/">Jigoshop</a></li>
+            <li><a href="http://www.magictoolbox.com/litecommerce/">LiteCommerce</a></li>
+            <li><a href="http://www.magictoolbox.com/magento/">Magento</a></li>
+            <li><a href="http://www.magictoolbox.com/miva/">Miva</a></li>
+            <li><a href="http://www.magictoolbox.com/netsuite/">NetSuite</a></li>
+            <li><a href="http://www.magictoolbox.com/nopcommerce/">nopCommerce</a></li>
+            <li><a href="http://www.magictoolbox.com/oxid/">OXID</a></li>
+            <li><a href="http://www.magictoolbox.com/opencart/">OpenCart</a></li>
+            <li><a href="http://www.magictoolbox.com/oscmax/">osCMax</a></li>
+            <li><a href="http://www.magictoolbox.com/oscommerce/">osCommerce</a></li>
+        </ul>
+    </div>
+    <div class="span-3 last">
+        <ul>
+            <li><a href="http://www.magictoolbox.com/prestashop/">PrestaShop</a></li>
+            <li><a href="http://www.magictoolbox.com/redshop/">redShop</a></li>
+            <li><a href="http://www.magictoolbox.com/shopify/">Shopify</a></li>
+            <li><a href="http://www.magictoolbox.com/virtuemart/">VirtueMart</a></li>
+            <li><a href="http://www.magictoolbox.com/volusion/">Volusion</a></li>            
+            <li><a href="http://www.magictoolbox.com/woocommerce/">Woocommerce</a></li>
+            <li><a href="http://www.magictoolbox.com/wordpress/">WordPress</a></li>
+            <li><a href="http://www.magictoolbox.com/wordpress-ecommerce/">WP e-Commerce</a></li>
+            <li><a href="http://www.magictoolbox.com/wysiwyg/">WYSIWYG Builder</a></li>
+            <li><a href="http://www.magictoolbox.com/xcart/">X-Cart</a></li>
+            <li><a href="http://www.magictoolbox.com/xcart-next/">X-Cart Next</a></li>
+            <li><a href="http://www.magictoolbox.com/xtcommerce/">xt:Commerce</a></li>
+            <li><a href="http://www.magictoolbox.com/zen-cart/">Zen-Cart</a></li>            
+        </ul>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="copy">Copyright © 2013 Magic Toolbox. All rights reserved. Use of this website constitutes
+    acceptance of the <a href="http://www.magictoolbox.com/terms/">Website Terms</a>
+    and <a href="http://www.magictoolbox.com/privacy/">Privacy Policy</a>.
+</div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+            })();
+
+        </script>
+    
+
+<div style="position: absolute; top: -10000px; width: 10px; height: 10px; overflow: hidden;"><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 844.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 844.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 844.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 848.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 290px; height: 165px; left: 534.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-red-290.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 290px; height: 165px; left: 627.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-290.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 290px; height: 165px; left: 720.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-blue-290.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 534.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 627.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 720.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-black-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: block; visibility: visible;" class="MagicZoomHeader">Hey! This is a caption.</div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="overflow: hidden; height: 278px;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: block; visibility: visible;" class="MagicZoomHeader">This caption is under the image.</div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: block; visibility: visible;" class="MagicZoomHeader">Hey! This is a big caption.</div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxGlow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734.5px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 290px; left: 734.5px; height: 165px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: block; visibility: visible;" class="MagicZoomHeader">Blue and white</div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 290px; height: 152px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -585.2px; top: -282.8px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 203px; left: 734px; height: 165px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -438px; top: -44.4px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 400px; height: 400px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -3.6px; top: -170px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 813px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -132.6px; top: -261px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; opacity: 0; left: 615px;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -19.8px; top: -182px;" src="Magic%20Zoom%20integration%20instructions_files/r6-blue-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; opacity: 0; left: 522px;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -140.4px; top: -172.8px;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 114px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -618px; top: -168.2px;" src="Magic%20Zoom%20integration%20instructions_files/r6-red-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 919px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -393px; top: -27px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 844px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: -270px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -535.8px; top: -225.6px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 330px; height: 188px; left: 534px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-blue-330.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 330px; height: 188px; left: 534px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-white-330.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 330px; height: 188px; left: 534px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: 0px; top: 0px;" src="Magic%20Zoom%20integration%20instructions_files/r6-red-330.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -123px; top: -192.6px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -324px; top: -224px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -24px; top: -270px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div><div style="overflow: hidden; z-index: 10002; top: -100000px; position: absolute; width: 300px; height: 300px; left: 734px; opacity: 0;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -417px; top: -90.8px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div></div><div style="overflow: hidden; z-index: 10002; top: 15885px; position: absolute; width: 290px; height: 152px; left: 734px; opacity: 1;" class="MagicZoomBigImageCont MagicBoxShadow"><div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px; display: none; visibility: hidden;" class="MagicZoomHeader"></div><div style="overflow: hidden;"><img style="padding: 0px; margin: 0px; border: 0px none; width: auto; height: auto; position: relative; left: -355px; top: -209px;" src="Magic%20Zoom%20integration%20instructions_files/r6-mix-1000.jpg"></div></div></body><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script><div style="display: none;" dntpignore="true" id="zaIconChangeListener">{"disabled":false,"total":0,"tracker":0,"blocked":0,"optout":0,"color":"green","firstPartySocial":false,"optoutEnabled":false,"count":0}</div><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script><script type="application/x-javascript" id="dnt-inject-js" src="Magic%20Zoom%20integration%20instructions_files/inject.js"></script></html>
